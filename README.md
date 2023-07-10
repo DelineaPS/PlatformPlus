@@ -5,7 +5,7 @@ The intent is to add ease of use with certain queries when working directly with
 
 To install the script to your current working directory via the command line, run the following:
 ```
-(Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/dnlrv/PlatformPlus/main/PlatformPlus.ps1').Content | Out-File .\PlatformPlus.ps1
+(Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/DelineaPS/PlatformPlus/main/PlatformPlus.ps1').Content | Out-File .\PlatformPlus.ps1
 ```
 
 ## Running the script
@@ -18,7 +18,7 @@ If scripts are not allowed to be run in your environment, an alternative method 
 
 Alternatively, for a completely scriptless run, where the script's contents is retrieved from the internet, and immediately executed as a ScriptBlock object (basically combining the previous cmdlets):
 ```
-([ScriptBlock]::Create(((Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/dnlrv/PlatformPlus/main/PlatformPlus.ps1').Content))).Invoke()
+([ScriptBlock]::Create(((Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/DelineaPS/PlatformPlus/main/PlatformPlus.ps1').Content))).Invoke()
 ```
 
 ## Requirements
